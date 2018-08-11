@@ -1,0 +1,168 @@
+/*
+Theme Name: Stratum
+Version: 1.0.0
+Description: Equal Height Grid Layout.
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+.boxed .pagination {
+	padding: 0 40px;
+}
+
+.project-type-filter {
+	padding: 20px 40px;
+	margin-bottom: 40px;
+	list-style: none;
+	background-color: #fff;
+}
+
+.boxed .project-type-filter {
+	padding: 0 40px;
+}
+
+.project-type {
+	padding: 0.5rem 0;
+}
+
+.project-type a {
+	color: #666;
+	border-bottom: 2px solid currentColor;
+}
+
+.project-type.current-project-type {
+	color: #999;
+}
+
+.project-type a:hover,
+.project-type a:focus {
+	color: #333;
+	box-shadow: none;
+}
+
+.project-type-meta {
+	text-align: center;
+	margin-bottom: 0.5rem;
+}
+
+.project-type-meta a {
+	box-shadow: none;
+	color: #666;
+	font-weight: bold;
+}
+
+.project-type-meta a:hover,
+.project-type-meta a:focus {
+	color: #333;
+}
+
+.portfolio-navigation .meta-nav {
+	margin-bottom: 0;
+	display: inline-block;
+	margin: 0 5px; 
+}
+
+.portfolio-navigation .nav-links {
+	background-color: #fff;
+}
+
+.portfolio-navigation .nav-previous {
+	float: right;
+	margin-right: 0;
+	margin-left: 1%;
+}
+
+.portfolio-navigation .nav-previous a {
+	text-align: right;
+}
+
+.portfolio-navigation .nav-next a {
+	text-align: left;
+}
+
+.boxed .portfolio-navigation .nav-previous,
+.boxed .portfolio-navigation .nav-previous a,
+.boxed .portfolio-navigation .nav-next,
+.boxed .portfolio-navigation .nav-next a {
+	border-width: 0;
+}
+
+@media only screen and (min-width: 860px) {
+
+	.project-type {
+		display: inline-block;
+		padding: 0.5rem;
+	}
+
+	.boxed .project-type-filter {
+		padding: 0;
+	}
+
+	.boxed .only-content-full .site-main,
+	.boxed .only-content-full .pagination {
+		padding-left: 60px;
+		padding-right: 60px;
+	}
+
+	.boxed .content-sidebar,
+	.boxed .sidebar-content {
+		padding-left: 60px;
+		padding-right: 60px;
+	}
+
+	.site-main .post-wrapper {
+		margin-bottom: 0;
+	}
+
+	.boxed .site-main .post-wrapper {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.site-main .hentry {
+		float: left;
+		width: calc( 50% - 20px );
+		background-color: #fff;
+		margin-bottom: 40px;
+		margin-right: 40px;
+	}
+
+	.boxed .site-main .hentry {
+		width: calc( 50% - 30px );
+		margin-right: 60px;
+		margin-bottom: 0;
+	}
+
+	.site-main .hentry:nth-of-type(2n) {
+		margin-right: 0;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	.boxed .content-area {
+		margin-right: 0;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.threecol-grid .site-main .hentry {
+		width: calc( 33.3333% - 27px );
+	}
+
+	.threecol-grid .site-main .hentry:nth-of-type(2n) {
+		margin-right: 40px;
+	}
+
+	.boxed.threecol-grid .site-main .hentry {
+		width: calc( 33.3333% - 40px );
+	}
+
+	.boxed.threecol-grid .site-main .hentry:nth-of-type(2n) {
+		margin-right: 60px;
+	}
+
+	.boxed.threecol-grid .site-main .hentry:nth-of-type(3n),
+	.threecol-grid .site-main .hentry:nth-of-type(3n) {
+		margin-right: 0;
+	}
+}

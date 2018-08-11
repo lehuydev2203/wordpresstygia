@@ -1,0 +1,112 @@
+.icon {
+    position: relative;
+    top: -0.0625em;
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+}
+
+.menu-toggle .icon {
+    top: -0.0825em;
+    margin-left: 5px;
+}
+
+.menu-toggle .icon-close {
+    display: none;
+}
+
+.toggled-on .menu-toggle .icon-close {
+    display: inline-block;
+}
+
+.toggled-on .menu-toggle .icon-bars {
+    display: none;
+}
+
+.sub-menu-toggle .icon {
+    width: 24px;
+    height: 24px;
+    -webkit-transition: transform 0.25s ease-in-out;
+        -ms-transition: transform 0.25s ease-in-out;
+            transition: transform 0.25s ease-in-out;
+    -webkit-transform: rotate( 0 );
+        -ms-transform: rotate( 0 );
+            transform: rotate( 0 );
+}
+
+.nav-menu .menu-item-has-children > a .icon,
+.nav-menu .page_item_has_children > a .icon {
+    display: none;
+}
+
+.sub-menu-toggle.toggled-on .icon {
+    -webkit-transform: rotate( -180deg );
+        -ms-transform: rotate( -180deg );
+            transform: rotate( -180deg );
+}
+
+.post:not(.sticky) .icon-thumb-tack {
+    display: none;
+}
+
+.sticky .icon-thumb-tack {
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+
+@media only screen and (min-width: 1024px) {
+    .nav-menu .menu-item-has-children > a .icon,
+    .nav-menu .page_item_has_children > a .icon {
+        display: inline;
+    }
+
+    .nav-menu .sub-menu .icon {
+        position: absolute;
+        top: 50%;
+        left: 1em;
+        right: auto;
+        margin-top: -7px;
+        -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+    }
+}
+
+.svg-fallback {
+    display: none;
+}
+
+.no-svg .svg-fallback {
+    display: inline-block;
+}
+
+.no-svg .sub-menu-toggle {
+    left: 0;
+    width: 2em;
+    padding: 0.5em 0 0;
+    text-align: center;
+}
+
+.no-svg .sub-menu-toggle .svg-fallback.icon-angle-down {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1;
+    -webkit-transform: rotate(-180deg); /* Chrome, Safari, Opera */
+            transform: rotate(-180deg);
+}
+
+.no-svg .sub-menu-toggle.toggled-on .svg-fallback.icon-angle-down {
+    -webkit-transform: rotate(0); /* Chrome, Safari, Opera */
+            transform: rotate(0);
+}
+
+.no-svg .sub-menu-toggle .svg-fallback.icon-angle-down:before {
+    content: \'\005E\';
+}

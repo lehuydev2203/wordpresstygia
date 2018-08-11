@@ -1,0 +1,100 @@
+/*
+Theme Name: Stratum
+Version: 1.0.0
+Description: Static frontpage widgets styling.
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+.front-widget .widget:first-child {
+	padding-top: 40px;
+}
+
+.front-widget {
+    display: flex;
+    width: 100%;
+    align-items: center;
+	background-color: #fff;
+}
+
+.front-widget .widget-container {
+	padding: 60px 0;
+	width: 100%;
+}
+
+.front-widget:first-of-type h3.widget-title {
+	font-size: 2rem;
+}
+
+.front-widget .widget_media_image img {
+	width: 100%;
+	height: auto;
+}
+
+.front-widget .wrap {
+	margin: 0 auto;
+}
+
+.front-widget .widget-wrapper {
+	width: 100%;
+}
+
+.no-site-content .site-content,
+.boxed.no-site-content .site-content,
+.boxed.frontpage.no-site-content .site-content {
+	padding: 0;
+}
+
+@media only screen and (min-width: 860px) {
+	.front-widget .widget {
+		padding-right: 0;
+		padding-left: 0;
+	}
+
+	.front-widget:first-of-type h3.widget-title {
+		font-size: 3rem;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	.front-widget h3.widget-title {
+		font-size: 2.25rem;
+	}
+
+	.front-widget:first-of-type h3.widget-title {
+		font-size: 5.2rem;
+	}
+
+	.frontpage .site-content {
+		padding: 40px 0 0;
+	}
+
+	.boxed.frontpage .site-content {
+		padding: 60px 0 0;
+	}
+
+	.no-site-content .site-content {
+		padding: 0;
+	}
+
+	.frontpage .site-header + .site-content {
+		padding-top: 145px;
+	}
+
+	.no-cta .site-header + .front-widget:first-of-type {
+		margin-top: 85px;
+	}
+
+	.cta .front-widget:first-of-type {
+		padding-top: 85px;
+		padding-bottom: 85px;
+	}
+
+	.front-widget .widget:first-child {
+		padding-top: 20px;
+	}
+
+	.no-cta .site-header {
+		background-color: #fff;
+	}
+}

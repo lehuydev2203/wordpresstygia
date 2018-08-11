@@ -1,0 +1,92 @@
+/*
+Theme Name: Stratum
+Version: 1.0.0
+Description: Customizer control css.
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+.slider-input {
+    font-size: 12px;
+    width: 60px !important;
+    height: 24px !important;
+    padding: 2px;
+    text-align: center;
+}
+
+.customize-control-range-slider .value {
+    display: inline-block;
+    float: right;
+    width: 38%;
+    text-align: right;
+}
+
+.customize-control-range-slider .customize-control-title {
+    display: inline-block;
+	width: 61%;
+}
+
+.stratum-slider-default-value {
+    line-height: 1;
+    float: right;
+    cursor: pointer;
+}
+
+.stratum-slider-default-value .dashicons {
+    font-size: 1em;
+    line-height: 1em;
+    width: 1em;
+    height: 1em;
+    color: #b2b6ba;
+}
+
+.customize-control-range-slider .slider.show-reset {
+    float: left;
+    width: 90%;
+}
+
+.customize-control-range-slider .px {
+    font-size: 12px;
+    font-weight: bold;
+    font-style: normal;
+    line-height: 18px;
+	display: block;
+	float: right;
+    padding: 2px 5px;
+    border-top: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    background: #fafafa;
+}
+
+.in-sub-panel #customize-theme-controls .customize-pane-child.current-panel-parent,
+#customize-theme-controls .customize-pane-child.current-section-parent {
+  -webkit-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+
+.customize-control-sub-section {
+	float: none;
+}
+
+#customize-controls .control-section.open .control-section-stratum_section .accordion-section-title {
+	color: #333;
+	background: #fff;
+	border-left-color: #fff;
+}
+
+#customize-controls .control-section.open .control-section-stratum_section .accordion-section-title:after {
+	color: #a0a5aa;
+}
+
+#customize-controls .control-section.open .control-section-stratum_section .accordion-section-title:hover,
+#customize-controls .control-section.open .control-section-stratum_section .accordion-section-title:focus {
+	color: #0073aa;
+	background: #f3f3f5;
+	border-left-color: #0073aa;
+}
+
+#customize-controls .control-section.open .control-section-stratum_section .accordion-section-title:hover::after {
+	color: #0073aa;
+}

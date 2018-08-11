@@ -1,0 +1,125 @@
+/*
+Theme Name: Stratum
+Version: 1.0.0
+Description: Master posts widget.
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+.widget-post-entry {
+    margin-top: 40px;
+}
+
+.widget-post-entry:after {
+    display: table;
+    clear: both;
+    content: '';
+}
+
+.widget-post-title a {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #333;
+}
+
+.widget-post-title a:hover,
+.widget-post-title a:focus {
+    color: #006eb8;
+}
+
+.widget-post-thumbnail {
+    display: block;
+}
+
+.widget-post-thumbnail:hover,
+.widget-post-thumbnail:focus {
+    box-shadow: none;
+}
+
+.list_l .widget-post-thumbnail {
+    float: left;
+    margin-right: 20px;
+}
+
+.list_r .widget-post-thumbnail {
+    float: right;
+    margin-left: 20px;
+}
+
+.grid_1 .widget-post-thumbnail,
+.grid_2 .widget-post-thumbnail,
+.grid_3 .widget-post-thumbnail,
+.grid_4 .widget-post-thumbnail {
+    display: table;
+    float: none;
+    margin: 0 auto 20px;
+}
+
+.list_l .widget-post-content .list_r .widget-post-content {
+    overflow: hidden;
+}
+
+.widget-post-entry .more-link {
+    text-transform: capitalize;
+}
+
+.grid_1 .widget-post-entry,
+.grid_2 .widget-post-entry,
+.grid_3 .widget-post-entry,
+.grid_4 .widget-post-entry {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+}
+
+.widget-post-date {
+    margin-right: 2px;
+}
+
+.widget-post-meta+.widget-post-excerpt {
+    margin-top: 1rem;
+}
+
+.widget-post-excerpt p {
+    margin: 0 0 1rem;
+}
+
+.widget-post-excerpt p:last-child {
+    margin-bottom: 0;
+}
+
+@media only screen and (min-width: 640px) {
+    .grid_2 .widget-post-entry,
+    .grid_3 .widget-post-entry,
+    .grid_4 .widget-post-entry {
+        width: calc( 50% - 23px);
+        margin-right: 40px;
+    }
+    .grid_2 .widget-post-entry:nth-of-type(2n),
+    .grid_3 .widget-post-entry:nth-of-type(2n),
+    .grid_4 .widget-post-entry:nth-of-type(2n) {
+        margin-right: 0;
+    }
+    .site-main .thumb-small .post-wrapper {
+        padding: 0;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+	.grid_3 .widget-post-entry,
+    .grid_3 .widget-post-entry:nth-of-type(2n) {
+        width: calc( 33.33% - 30px);
+        margin-right: 40px;
+    }
+    .grid_3 .widget-post-entry:nth-of-type(3n) {
+        margin-right: 0;
+    }
+    .grid_4 .widget-post-entry,
+    .grid_4 .widget-post-entry:nth-of-type(2n) {
+        width: calc( 25% - 26px);
+        margin-right: 30px;
+    }
+    .grid_4 .widget-post-entry:nth-of-type(4n) {
+        margin-right: 0;
+    }
+}
