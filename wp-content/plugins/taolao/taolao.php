@@ -1,35 +1,34 @@
 <?php
-/*
-Plugin Name: taolao
-Plugin URI: http://www.tygia.com/
-Description: Widget Tỷ giá & Giá Vàng by www.tygia.com
-Version: 1.3
-Author: Quang Nguyen
-Author URI: http://www.tygia.com/
-License: GPLv2 or later
-*/
-function hstngr_register_widget() {
+/**
+Plugin Name: Widget tỷ giá $
+Description: Thực hành tạo widget item.
+Author: Lê Huy
+Version: 1.0
+Author URI: https://examhtmlcss.000webhostapp.com/contact
+ */
 
-register_widget( 'hstngr_widget' );
+function tygia_register_widget() {
+
+register_widget( 'tygia_usd_widget' );
 
 }
-add_action( 'widgets_init', 'hstngr_register_widget' );
-class hstngr_widget extends WP_Widget {
+add_action( 'widgets_init', 'tygia_register_widget' );
+class tygia_usd_widget extends WP_Widget {
 function __construct() {
 
 parent::__construct(
 
 // widget ID
 
-'hstngr_widget',
+'tygia_usd_widget',
 
 // widget name
 
-__('Hostinger Sample Widget', ' hstngr_widget_domain'),
+__('Ty Gia USD', ' hstngr_widget_domain'),
 
 // widget description
 
-array( 'description' => __( 'Hostinger Widget Tutorial', 'hstngr_widget_domain' ), )
+array( 'description' => __( 'Ty Gia USD', 'hstngr_widget_domain' ), )
 
 );
 
@@ -68,7 +67,7 @@ echo $args['before_title'] . $title . $args['after_title'];
         //loadpage();
         </script>
         </div>
-    <a onclick="loadpage()" class="btn  btn-info btn-outline-info " id="idcolor"> Cập Nhập </a>
+        <a onclick="loadpage()" class="btn  btn-info btn-outline-info " id="idcolor"> Cập Nhập </a>
         <?
 
 
