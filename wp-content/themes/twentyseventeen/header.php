@@ -36,7 +36,7 @@
     </style>
 </head>
 
-<body <?php body_class(); ?> onload='loadpage()'>
+<body <?php body_class(); ?>>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'twentyseventeen' ); ?></a>
 

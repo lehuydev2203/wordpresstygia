@@ -48,27 +48,27 @@ echo $args['before_title'] . $title . $args['after_title'];
 
 //output
 
-    ?>
-        <div onload="loadpage()">
-        <div id='response'></div>
 
-        <script>
+    ?>
+
+    <div id='response'></div>
+
+    <script>
         function loadpage(){
-        var xmlhttp= new XMLHttpRequest();
-        xmlhttp.onreadystatechange = function () {
-            if(this.readyState == 4 && this.status == 200) {
-                document.getElementById('response').innerHTML=this.responseText;
+            var xmlhttp= new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function () {
+                if(this.readyState == 4 && this.status == 200) {
+                    document.getElementById('response').innerHTML=this.responseText;
+                    //loadpage();
+                }
             }
+            xmlhttp.open('GET',"wp-content/plugins/taolao/getExchangesVietcom.php", true);
+            xmlhttp.send();
+            setTimeout("loadpage()",30000);
         }
-        xmlhttp.open('GET', 'wp-content/plugins/taolao/getExchangesVietcom.php', true);
-        xmlhttp.send();
-        //setTimeout(loadpage(),10000);
-        }
-        //loadpage();
-        </script>
-        </div>
-        <a onclick="loadpage()" class="btn  btn-info btn-outline-info " id="idcolor"> Cập Nhập </a>
-        <?
+        window.load=loadpage()
+    </script>
+    <?
 
 
 echo $args['after_widget'];
